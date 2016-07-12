@@ -1,0 +1,41 @@
+# Site settings
+title: T47IO
+email: contact@t47.io
+description: ""
+baseurl: ""
+url: "http://t47io.github.io"
+github_username:  t47io
+
+# Default variables
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "redirect"
+      author: "Siqi Tian"
+      title: "Redirect"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+# Markdown Processors
+kramdown:
+  input: GFM
+
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
